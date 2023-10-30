@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6b3d0b77ff69470e87e82fcecfe913e5" Name="Diagram1" ZoomLevel="94">
+        <EntityTypeShape EntityType="EC_GROUPModel.forward_clientes" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EC_GROUPModel.forward_ctacte" Width="1.5" PointX="5.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EC_GROUPModel.forward_factitem" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EC_GROUPModel.forward_facturas" Width="1.5" PointX="7.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EC_GROUPModel.forward_recibos" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EC_GROUPModel.INGRESOSPROPIOS" Width="1.5" PointX="9.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EC_GROUPModel.REFERENCIASPAGOS" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="EC_GROUPModel.RELACIONDOCUMENTOS" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="EC_GROUPModel.FK_RELACIONDOCUMENTOS_REFERENCIASPAGOS" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="EC_GROUPModel.USUARIOSWEB" Width="1.5" PointX="12" PointY="24.75" />
+        <AssociationConnector Association="EC_GROUPModel.FK_REFERENCIASPAGOS_USUARIOSWEB" />
+        <EntityTypeShape EntityType="EC_GROUPModel.ESTADOSREFERENCIAS" Width="1.5" PointX="3" PointY="37.5" />
+        <EntityTypeShape EntityType="EC_GROUPModel.MONEDAS" Width="1.5" PointX="0.5" PointY="5.25" />
+        <AssociationConnector Association="EC_GROUPModel.FK_REFERENCIASPAGOS_ESTADOSREFERENCIAS" />
+        <AssociationConnector Association="EC_GROUPModel.FK_REFERENCIASPAGOS_MONEDAS" />
+        <EntityTypeShape EntityType="EC_GROUPModel.CORREOS" Width="1.5" PointX="14.625" PointY="0.875" />
+        <EntityTypeShape EntityType="EC_GROUPModel.TIPOCORREOS" Width="1.5" PointX="12.375" PointY="1.125" />
+        <AssociationConnector Association="EC_GROUPModel.FK_CORREOS_TIPOCORREOS" />
+        <EntityTypeShape EntityType="EC_GROUPModel.TIPOUSUARIOWEB" Width="1.5" PointX="12.375" PointY="3.875" />
+        <AssociationConnector Association="EC_GROUPModel.FK_USUARIOSWEB_TIPOUSUARIOWEB" />
+        <EntityTypeShape EntityType="EC_GROUPModel.TIPORELACIONDOCUMENTOS" Width="1.5" PointX="16.375" PointY="4.25" />
+        <AssociationConnector Association="EC_GROUPModel.FK_RELACIONDOCUMENTOS_TIPORELACIONDOCUMENTOS" />
+        <EntityTypeShape EntityType="EC_GROUPModel.CAMBIOSDIVISAS" Width="1.5" PointX="3" PointY="40.125" />
+        <AssociationConnector Association="EC_GROUPModel.FK_CAMBIODIVISAS_MONEDAS_DESTINO" />
+        <AssociationConnector Association="EC_GROUPModel.FK_CAMBIODIVISAS_MONEDAS_ORIGEN" />
+        <EntityTypeShape EntityType="EC_GROUPModel.TERCEROS" Width="1.5" PointX="14.375" PointY="9.5" />
+        <AssociationConnector Association="EC_GROUPModel.FK_USUARIOSWEB_TERCEROS" />
+        <EntityTypeShape EntityType="EC_GROUPModel.v_forward_factitem" Width="1.5" PointX="10.375" PointY="10.75" />
+        <EntityTypeShape EntityType="EC_GROUPModel.v_forward_facturas" Width="1.5" PointX="16.375" PointY="6.75" />
+        <EntityTypeShape EntityType="EC_GROUPModel.fed_facturas_enviadas" Width="1.5" PointX="10.375" PointY="17.75" />
+        <EntityTypeShape EntityType="EC_GROUPModel.fed_facturas_no_enviadas" Width="1.5" PointX="18.375" PointY="4.75" />
+        <EntityTypeShape EntityType="EC_GROUPModel.fed_facturas_procesadas" Width="1.5" PointX="18.375" PointY="1" />
+        <EntityTypeShape EntityType="EC_GROUPModel.fed_facturas_procesadas_errores" Width="1.5" PointX="20.625" PointY="1.25" />
+        <EntityTypeShape EntityType="EC_GROUPModel.fed_parametros" Width="1.5" PointX="12.375" PointY="6.75" />
+        <EntityTypeShape EntityType="EC_GROUPModel.fed_resolucion_facturacion" Width="1.5" PointX="18.375" PointY="7.75" />
+        <EntityTypeShape EntityType="EC_GROUPModel.fed_usuarios" Width="1.5" PointX="18.375" PointY="11.75" />
+        <AssociationConnector Association="EC_GROUPModel.FK_forward_errores_registrados_forward_facturas_procesadas" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
